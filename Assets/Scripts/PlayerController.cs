@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
         rigidbody2D.velocity = movement * movementSpeed;
     }
 
+    
     private void UpdateState()
     {
         if (movement.x > 0)
@@ -64,4 +65,5 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger(animationState, (int)States.idle);
         }
     }
+    
 }
